@@ -1,0 +1,61 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Visual Studio / Rider / MonoDevelop generated
+/ExportedObj/**
+/.vs/**
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+*.csproj
+*.cache
+*Resharper*
+*ReSharper*
+*.orig
+*.orig.*
+*sln*
+
+.idea/**
+/Assets/Plugins/Editor/Jetbrains/*
+/Assets/Plugins/Editor/Jetbrains.meta
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+report.xml
+
+# Other
+/CodeCoverage/**
+/SHFB/Help/**
+
+# Custom
+/Builds/**
+/Data/**
+/Assets/_Project/Preferences/Editor/Credentials/**
+/Assets/_Project/Preferences/Editor/Credentials.meta
+/Assets/Temp/**
+/Assets/Temp.meta
+
+# EXPERIMENTAL
+#Ignore all .meta file
+*.meta
+#But not source file with postfix, which is everything but a folder
+!*.*.meta
