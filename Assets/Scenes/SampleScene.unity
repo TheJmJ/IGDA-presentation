@@ -662,16 +662,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5b722781bc23c46952babdc1016678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatA: 0
-  floatB: 0
+  floatA: 4.2
+  floatB: 6.9
   range: 50
   text: Lorem Ipsum
-  textArea: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  textArea: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
-  multiLine: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    \nAnd a new line"
+  multiLine: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    \nAnd a new line"
   hidden: Only visible in code
   color: {r: 1, g: 1, b: 1, a: 1}
   colorHDR: {r: 0, g: 1, b: 0, a: 1}

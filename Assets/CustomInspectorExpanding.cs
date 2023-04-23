@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
 
 // Tell what class inspector we're trying to customize
@@ -24,6 +25,7 @@ public class CustomInspectorExpandingEditor : Editor
         base.OnInspectorGUI();
     }
 }
+#endif
 
 public class CustomInspectorExpanding : DefaultInspectorExpanding
 {

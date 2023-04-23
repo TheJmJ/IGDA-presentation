@@ -6,8 +6,8 @@ public class DefaultInspectorExpanding : MonoBehaviour
 {
     // Apply a nice header to improve readibility
     [Header("Header")]
-    public float floatA = 0.0f;
-    public float floatB = 0.0f;
+    public float floatA = 4.20f;
+    public float floatB = 6.9f;
 
     [Header("Another Header")]
     // Test Range in Inspector
@@ -16,18 +16,18 @@ public class DefaultInspectorExpanding : MonoBehaviour
 
     [Header("Lorem Ipsum dings")]
     
-    // Apply space since why not?
-    [Space]
+    // Apply 20px space above since why not?
+    [Space(20f)]
     public string text = "Lorem Ipsum";
     
     // Let's try TextArea for larger text
     // NOTE: Can also be called like a method, with minLines and maxLines passed into it
-    [TextArea]
-    public string textArea = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+    [TextArea(1,5)]
+    public string textArea = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nAnd a new line";
 
     // Almost same as TextArea, but without word wrapping and is indented 
     [Multiline(4)]
-    public string multiLine = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+    public string multiLine = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nAnd a new line";
 
     [HideInInspector]
     public string hidden = "Only visible in code";
@@ -39,6 +39,7 @@ public class DefaultInspectorExpanding : MonoBehaviour
     [ColorUsage(false, true)]
     public Color colorHDR = Color.green;
 
+#if UNITY_EDITOR
     // Draw this method in Right-click menu
     [ContextMenu("Randomize Color!")]
     public void RandomizeColor()
@@ -56,4 +57,5 @@ public class DefaultInspectorExpanding : MonoBehaviour
             GetComponentInChildren<MeshRenderer>().material.color = colorHDR;
 
     }
+#endif
 }
